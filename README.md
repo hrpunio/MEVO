@@ -2,7 +2,7 @@
 
 ## Struktura pliku YYYYMMDD_log.csv
 
-Na podstawie pliku JavaScript o nast. zawartości (fragment):
+Na podstawie pliku JavaScript o następującej zawartości (fragment, po ### komentarze):
 
 ```
 var NEXTBIKE_PLACES_DB = '
@@ -38,9 +38,11 @@ YYYYMMDDHHMMSS;lista-miejsc-postojowych
 gdzie YYYYMMDDHHMMSS to stempel czasu a lista-miejsc-postojowych to
 miejsca-postojowe odzielone znakiem + (plus):
 
+```
 miejsce-postojowe+miejsce-postojowe+miejsce-postojowe+...
+```
 
-miejsce-postojowe to:
+miejsce-postojowe ma następującą strukturę:
 
 ```
 {S#number|B#city}=latitude longitude=bikes=bike_list;
@@ -48,11 +50,11 @@ miejsce-postojowe to:
 
 jeżli S to stacja jeżeli B to rower-poza-stacją
 
-jeżeli S to wstawiamy numer-stacji po znaku #
+jeżeli S to po znaku # jest numer-stacji
 
-jeżeli B to wstawiamy skrót nazwy miasta (po znaku #)
+jeżeli B to po znaku # jest skrót nazwy miasta
 
-bike_list to lista numerów rowerów w tym miejscu postojowym (odzielona przecinkami
+bike_list to lista numerów rowerów w tym miejscu postojowym (odzielona przecinkami)
 
 Przykłady:
 
