@@ -192,7 +192,7 @@ ele -- wysokość w m.n.p.m
 
 city -- miasto
 
-remarks -- uwago
+remarks -- uwagi
 
 Wysokość została dodana z wykorzystaniem programu gpsprune (cf https://wiki.openstreetmap.org/wiki/GpsPrune)
 
