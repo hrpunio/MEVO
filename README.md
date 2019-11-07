@@ -1,5 +1,9 @@
 # MEVO
 
+Mevo to nieudany projekt roweru miejskiego działający w Trójmieście i okolicach
+od końca marca do końca października 2019r (siedem miesięcy). 
+(więcej https://pl.wikipedia.org/wiki/Mevo)
+
 ## Struktura pliku YYYYMMDD_log.csv
 
 Na podstawie pliku JavaScript o następującej zawartości (fragment, po ### komentarze):
