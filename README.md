@@ -73,3 +73,58 @@ Skróty nazw miast:
 'Kartuzy' = 'KT', 'Somonino' = 'SO', 'Sierakowice' = 'SI', 'Władysławowo' = 'WW',
 'Stężyca' = 'ST', 'Gdańsk-Wawa' = 'GDWA'
 
+## Plik MEVO_DAILY_BIKES.csv
+
+Zawiera dzienne agregaty obliczone na podstawie plików YYYYMMDD_log.csv:
+
+```
+day;bikes;zb;dist.total;ga;gd;sop;tczew;rumia;s10111;s10111d;s10112;\
+s10112d;zstat;sstat;gd0p;ga0p;sop0p;tczew0p;rumia0p;gd1p;ga1p;sop1p;\
+tczew1p;rumia1p;slope3;slope5;stage2;stage4;stage6;stage8;stage10;stage12;\
+stage14;stage16;stage18;stage20;stage99
+```
+
+Przy czym:
+
+bikes -- łączna liczba rowerów dostępnych/wykazanych w ciągu dnia w
+plikach locations.js;
+
+zb -- łączna liczba rowerów wykazanych, które nie były używane
+(zero-bikes);
+
+dist.total -- dystans łącznie (liczony po prostej);
+
+ga/gd/sop/tczew/rumia -- dystans łącznie (liczony po prostej dla
+miast; jeżeli rower przejechał z miasta do miasta to każde miasto
+dostaje połowę);
+
+s10111/s10112 --przeciętna liczba rowerów na stacjach s10111/s10112 liczona
+jako (r1 + ... + rN)/N (ri -- liczba rowerów na stacji i;
+N -- liczba pobrań pliku locations.js, jeżeli pobrano wszystkie to N=720/dobę (24 * 30));
+
+s10111d/s10112d -- przeciętna liczba rowerów na stacjach s10111/s10112
+w godzinach 5--23;
+
+zstat -- przeciętny odsetek stacji bez rowerów (zero-stations),
+liczony jako (s1+... + sN)/(S × N) * 100 (si -- liczba stacji bez rowerów;
+N -- liczba pobrań pliku locations.js; S -- liczba stacji w systemie);
+
+sstat -- przeciętny odsetek stacji z maksimum jednym rowerem
+(single-stations), liczony jako
+(s1+... + sN)/(S × N) * 100 (si -- liczba stacji bez rowerów lub z jednym rowerem; reszta
+jak wyżej);
+
+gd0p/ga0p/sop0p/tczew0p/rumia0p -- przeciętny odsetek stacji bez
+rowerów (zero-stations) dla miast (gd/ga/sop/tczew/rumia). Liczony podobnie jak
+zstat tylko si/S -- dotyczy stacji w danym mieście oczywiście a nie ogółem;
+
+gd1p/ga1p/sop1p/tczew1p/rumia1p -- przeciętny odsetek stacji z
+maksimum jednym rowerem (single-stations) dla miast
+(gd/ga/sop/tczew/rumia). Liczony jak sstat tylko si/S dotyczy stacji w
+danym mieście oczywiście a nie ogółem;
+
+slope3/slope5 -- łączny dystans przejechanych odcinków o nachyleniu
+przeciętnym 3%/5% (liczonym po prostej);
+
+stage2/stage4 itd -- łączny dystans przejechanych odcinków o długości
+0--2km, 2--4km itd (liczonym po prostej)
