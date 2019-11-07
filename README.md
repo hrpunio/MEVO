@@ -132,3 +132,68 @@ przeciętnym 3%/5% (liczonym po prostej);
 
 stage2/stage4 itd -- łączny dystans przejechanych odcinków o długości
 0--2km, 2--4km itd (liczonym po prostej)
+
+MEVO_DAILY_BIKES.csv jest wynikiem przetworzenia wszystkich plików YYYYMMDD_log.csv
+skryptem mevo2zzz.pl. Skrypt ten pomija rowery-poza-stacją (liczy tylko dla zaparkowanych na stacjach)
+
+
+## Plik MEVO_DAILY_TIMES.csv
+
+Zawiera dzienne agregaty obliczone na podstawie plików YYYYMMDD_log.csv (w trochę inny sposób niż
+w pliku MEVO_DAILY_BIKES.csv:
+
+```
+date;bikes;time;hhmm;dist;speed;mediantime;bike25;bike00;bikesTotal;zb;distTotal
+```
+
+Przy czym:
+
+bikes -- łączna liczba rowerów dostępnych/wykazanych w ciągu dnia w
+plikach locations.js;
+
+time -- łączny czas wykorzystania rowerów (liczony jako różnica pomiędzy 
+pierwszy-czasem-na-nowej-stacji a ostatnim-czasem-na-poprzedniej-stacji; w minutach)
+
+hhmm -- to samo co time ale przeliczone na godziny:minuty
+
+dist -- łączny dystans (liczony po prostej)
+
+speed -- średnia prędkość (czyli dist/time)
+
+mediantime -- mediana czasu odcinka 
+
+bike25 -- liczba rowerów które przejechały 25km i więcej
+
+bike00 -- liczba rowerów które przejechały 0,5km i mniej
+
+bikesTotal;zb;distTotal -- wartości skopiowane z MEVO_DAILY_BIKES.csv, odpowiednio bikes, zb oraz dist.total
+
+MEVO_DAILY_TIMES.csv jest wynikiem przetworzenia wszystkich plików YYYYMMDD_log.csv
+skryptem mevo2zzz.pl (powstaje MEVO_DAILY_TIMES.log) 
+a następnie dodania bikes, zb oraz dist.total (skrypt mevo_disttime_join.pl)
+
+Skrypt ten nie pomija rowerów-poza-stacją (stąd różnice w wielkości łącznego dystansu)
+
+## Plik MEVO_DAILY_BIKES.csv
+
+Pozycje i wysokości n.p.m stacji MEVO:
+
+```
+id;coords;ele;city;remarks
+```
+
+Przy czym:
+
+id -- id stacji;
+
+coords -- współrzędne
+
+ele -- wysokość w m.n.p.m
+
+city -- miasto
+
+remarks -- uwago
+
+Wysokość została dodana z wykorzystaniem programu gpsprune (cf https://wiki.openstreetmap.org/wiki/GpsPrune)
+
+
