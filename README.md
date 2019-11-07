@@ -40,7 +40,7 @@ YYYYMMDDHHMMSS;lista-miejsc-postojowych
 ```
 
 gdzie YYYYMMDDHHMMSS to stempel czasu a lista-miejsc-postojowych to
-miejsca-postojowe odzielone znakiem + (plus):
+miejsca-postojowe oddzielone znakiem + (plus):
 
 ```
 miejsce-postojowe+miejsce-postojowe+miejsce-postojowe+...
@@ -58,7 +58,7 @@ jeżeli S to po znaku # jest numer-stacji
 
 jeżeli B to po znaku # jest skrót nazwy miasta
 
-bike_list to lista numerów rowerów w tym miejscu postojowym (odzielona przecinkami)
+bike_list to lista numerów rowerów w tym miejscu postojowym (oddzielona przecinkami)
 
 Przykłady:
 
