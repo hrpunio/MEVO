@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2' xmlns:gx='http://www.google.com/kml/ext/2.2'>
+<Document><name>MEVO DAILY TRACKS</name>
+<description>tomasz przechlewski, http://pinkaccordions.homelinux.org. Some rights reserved (CC BY 2.0)</description>
+<Style id='Icon1st'><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pal4/icon49.png</href></Icon></IconStyle></Style>
+<Style id='redLinePoly'><LineStyle><color>ff0000ff</color><width>4</width></LineStyle></Style>
+<Placemark><styleUrl>#Icon1st</styleUrl><name>987351st</name><description>1st</description><Point><coordinates>18.63394889,54.38723111</coordinates></Point></Placemark><Placemark><styleUrl>#redLinePoly</styleUrl><name>98735</name><LineString><tessellate>1</tessellate><coordinates>18.63394889,54.38723111 18.65744918,54.35375360 18.60509804,54.38873737 18.60722541,54.37789212 18.56440495,54.42330078 18.56161546,54.43062174 18.58176353,54.41987557 </coordinates></LineString></Placemark>
+</Document></kml>

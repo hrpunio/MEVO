@@ -136,6 +136,26 @@ stage2/stage4 itd -- łączny dystans przejechanych odcinków o długości
 MEVO_DAILY_BIKES.csv jest wynikiem przetworzenia wszystkich plików YYYYMMDD_log.csv
 skryptem mevo2zzz.pl. Skrypt ten pomija rowery-poza-stacją (liczy tylko dla zaparkowanych na stacjach)
 
+Uwaga: liczenie dystansu jest mocno przybliżone: zliczane są odcinki
+proste a nie rzeczywiste odległości, jeżeli ktoś przejechał dużo, ale
+zaparkował obok miejsca, z którego wyjechał, to różnica też będzie
+duża (w skrajnym przypadku jeżeli rower wrócił w to samo miejsce, to
+dystans pokonany liczont tą metodą będzie wynosił zero).
+
+Ponadto czasami rower był wożony (przez serwis) i to też jest nie do
+odróżnienia (well, można próbować, ale po co -- i tak nie dostaniemy
+suma-summarum dokładnego wyniku). Ten drugi przypadek obrazuje sesja
+zdjęciowa z 6 sierpnia p. Dulkiewicz (ta w której radziła marszałkowi
+Kuchcińskiemu żeby jeździł do Rzeszowa rowerem Mevo; pliki
+dulkiewicz_sesja_zdjeciowa_instagram.png,
+dulkiewicz_sesja_zdjeciowa_20190806.png,
+MEVO_TRACKS_20190806_98735.kml, MEVO_TRACKS_20190805_98735.kml). Rower
+był zaparkowany w 7 miejscach, nigdy obok Urzędu Miejskiego, wcześnie
+rano pojawił się w siedzibie Operatora na terenach MTG (Żaglowa),
+następny wpis około 17 na Podwalu Staromiejskim). Zapewne do 17.00 był
+szykowany/wożony przez serwis na potrzeby filmowe (że tak powiem).
+Ile tak naprawdę przejechał tego dnia -- trudno ustalić. Nb. poprzedniego
+przejechał zero (cały dzień tkwił `na warsztacie')
 
 ## Plik MEVO_DAILY_TIMES.csv
 
