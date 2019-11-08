@@ -4,6 +4,14 @@ Mevo to nieudany projekt roweru miejskiego działający w Trójmieście i okolic
 od końca marca do końca października 2019r (siedem miesięcy). 
 (więcej https://pl.wikipedia.org/wiki/Mevo)
 
+Częścią MEVO oprócz rowerów, stojaków itp był system,
+który pozwalał ewentualnym użytkownikom zorientować się ile 
+i czy w ogóle (na interesującej ich stacji) jest
+rowerów. Informacja ta w postaci stosownego pliku JavaScript
+była pobierana co 120s (co 2 minuty). 
+Ponieważ łączna objętość oryginalnych plików
+przekracza 5Gb zostały one skonwertowane (w opisany poniżej sposób).
+
 ## Struktura pliku YYYYMMDD_log.csv
 
 Na podstawie pliku JavaScript o następującej zawartości (fragment, po ### komentarze):
