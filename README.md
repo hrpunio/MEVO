@@ -161,7 +161,7 @@ MEVO_TRACKS_20190806_98735.kml, MEVO_TRACKS_20190805_98735.kml). Rower
 był zaparkowany w 7 miejscach, nigdy obok Urzędu Miejskiego, 
 gdzie odbyła się sesja zdjęciowa. Wcześnie
 rano pojawił się w siedzibie Operatora na terenach MTG (Żaglowa),
-następny wpis około 17:00 na Podwalu Staromiejskim). Zapewne do 17.00 był
+następny wpis około 17:00 (na Podwalu Staromiejskim). Zapewne do 17.00 był
 szykowany/wożony przez serwis na potrzeby filmowe (że tak powiem).
 Ile tak naprawdę przejechał tego dnia -- trudno ustalić. Nb. poprzedniego
 przejechał zero (cały dzień tkwił `na warsztacie')
